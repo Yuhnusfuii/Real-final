@@ -2,12 +2,18 @@ export default function Home() {
   return (
     <div style={{ padding: "1.5rem" }}>
       <h1>Home</h1>
-      <p>Welcome! This is a simple React + Vite app for deployment, security, and optimization practice.</p>
-      <ul>
-        <li>Register an account</li>
-        <li>Log in and visit the Dashboard</li>
-        <li>Check the Navbar links</li>
-      </ul>
+      <picture>
+        <source srcSet="/images/hero.webp" type="image/webp" />
+        <img
+          src="/images/hero.jpg"
+          alt="Hero banner"
+          loading="lazy"
+          width="1200"
+          height="600"
+          style={{ width: "100%", height: "auto", borderRadius: 12 }}
+        />
+      </picture>
+      <p>Welcome! Ảnh trên dùng WebP + lazy loading + kích thước cố định để giảm CLS.</p>
     </div>
   );
 }
