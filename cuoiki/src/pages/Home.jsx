@@ -3,9 +3,9 @@ export default function Home() {
     <div style={{ padding: "1.5rem" }}>
       <h1>Home</h1>
       <picture>
-        <source srcSet="/images/hero.webp" type="image/webp" />
+        <source srcSet="/images/Anh3.webp" type="image/webp" />
         <img
-          src="/images/hero.jpg"
+          src="/images/Anh4.jpg"
           alt="Hero banner"
           loading="lazy"
           width="1200"
