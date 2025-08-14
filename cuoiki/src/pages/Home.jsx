@@ -45,7 +45,7 @@ export default function Home() {
           style={{ width: "100%", height: "auto", borderRadius: 12 }}
         />
       </picture>
-      <p>Welcome! Ảnh trên dùng WebP + lazy loading + kích thước cố định để giảm CLS.</p>
+      <p>Welcome! Ảnh trên dùng WebP + lazy loading</p>
     </div>
   );
 }
