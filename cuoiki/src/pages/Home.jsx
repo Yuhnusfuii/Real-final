@@ -3,7 +3,7 @@ export default function Home() {
     <div style={{ padding: "1.5rem" }}>
       <h1>Home</h1>
       <picture>
-        <source srcSet="/images/Anh3.webp" type="image/webp" />
+        <source srcSet="/images/Anh1.webp" type="image/webp" />
         <img
           src="/images/Anh4.jpg"
           alt="Hero banner"
