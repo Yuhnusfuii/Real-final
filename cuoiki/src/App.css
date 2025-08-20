@@ -18,6 +18,17 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Reset nhẹ để tính kích thước ổn định */
+* { box-sizing: border-box; }
+
+:root {
+  --card-w: 860px;
+  --pad: 1.25rem;
+}
+
+/* Dùng chung cho các trang có card */
+.page-wrap { display:flex; justify-content:center; padding:2rem 1rem; }
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,7 +45,13 @@
 }
 
 .card {
-  padding: 2em;
+  width: 100%;
+  max-width: var(--card-w);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: var(--pad);
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
 }
 
 .read-the-docs {

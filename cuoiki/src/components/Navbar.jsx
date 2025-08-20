@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { isAuthenticated, logout } from "../auth";
 import "./Navbar.css";
+import { APP_NAME } from "../config"; 
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -27,9 +28,12 @@ export default function Navbar() {
   return (
     <header className="nav">
       <div className="nav-inner">
+        
+        
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          ReactDeploy
+          {APP_NAME} {/* 👈 dùng từ ENV */}
         </NavLink>
+
 
         <button
           className="hamburger"
